@@ -156,7 +156,7 @@
 <script>
     document.getElementById('applyButton').addEventListener('click', function() {
       var userEmail = document.getElementById('email').value;
-      var url = `http://107.173.214.89:5000/collect_email?project_name=visionAi&user_email=${encodeURIComponent(userEmail)}`;
+      var url = `https://cors-anywhere.herokuapp.com/http://107.173.214.89:5000/collect_email?project_name=visionAi&user_email=${encodeURIComponent(userEmail)}`;
   
       fetch(url, { method: 'GET' })
       .then(response => response.text())
@@ -173,7 +173,7 @@
     });
     document.getElementById('applyButton2').addEventListener('click', function() {
       var userEmail = document.getElementById('email2').value;
-      var url = `http://107.173.214.89:5000/collect_email?project_name=visionAi&user_email=${encodeURIComponent(userEmail)}`;
+      var url = `https://cors-anywhere.herokuapp.com/http://107.173.214.89:5000/collect_email?project_name=visionAi&user_email=${encodeURIComponent(userEmail)}`;
   
       fetch(url, { method: 'GET' })
       .then(response => response.text())
